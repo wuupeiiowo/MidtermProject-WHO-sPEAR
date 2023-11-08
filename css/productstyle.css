@@ -1,0 +1,376 @@
+html{
+    font-family:'Prata', serif;
+    background-color: #E1DCD3;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'bubble';
+    src: url('../fonts-bubble/font/jf-openhuninn-2.0.woff') format("woff"),
+           url('../fonts-bubble/font/jf-openhuninn-2.0.ttf') format("truetype"),
+  }
+
+.bubble{
+    font-family:'bubble';
+    font-size: 1.5rem;
+    letter-spacing: 0.15625rem;
+    color: #3B4F19;
+    line-height:3rem;
+  }
+.container{
+    max-width:1280px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+
+header{
+    width:100%;
+    z-index:9;
+    position: relative;
+}
+    
+nav{
+    position:relative;
+    z-index:9999;
+    width:100%;
+    margin: 0;
+    padding:0;
+}
+    
+.header-list{
+    display: inline-flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+    margin-top:1.25rem;
+    margin-left: 30rem;
+}
+    
+.header-list-item{
+    display: block;
+    padding:0.75rem;
+    letter-spacing: 0.125rem;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left:3rem;
+}
+    
+.header-list-item a{
+    color: #3B4F19;
+    text-decoration: none;
+}
+
+.logo{
+    width:180px;
+    height:180px;
+}
+
+.header-fixed{
+    display: flex;
+    max-width:1280px;
+    width:100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width:90px;
+    height:90px;
+}
+
+.header-list a:hover{
+    color: white;
+    transition-duration:250ms;
+}
+
+/*title*/
+.capitalview-product{
+    display:inline-flex;
+    align-items: center;
+    width:100%;
+    margin-top:6.25rem;
+}
+
+.capitalview{
+    width: 59.375rem;
+    height: 32.5rem;
+    object-fit: cover;
+    object-position:center;
+    margin-left:2.5rem;
+    display: block;
+    margin: 0;
+}
+
+.capital-title{
+    color: #3B4F19;
+    margin: 0;
+    writing-mode: vertical-rl;
+    display: inline-block;
+}
+
+.capital-title h1{
+    font-size: 5rem;
+    letter-spacing: 0.5625rem;
+    margin: 0;
+    text-align: center;
+}
+
+.capital-title h1 span{
+    display:inline-block;
+    padding:1rem;
+    margin:1rem 0 1rem 1rem;
+    font-weight: 400;
+}
+
+/*leadin product*/
+
+.leadin-product{
+    color: #3B4F19;
+    font-family: Italiana;
+    font-size: 2.1875rem;
+    letter-spacing: 0.21875rem;
+    margin-top:1.25rem;
+    text-align: center;
+}
+
+.leadin-product p{
+    margin: 0;
+    display:block;
+}
+
+/*product list*/
+
+.product-list{
+    margin-top:10rem;
+    font-family:'bubble';
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-png{
+    width: 15.625rem;
+    height: 15.625rem;
+    margin-top:-40px;
+}
+
+.product-item {
+    width: 32.5rem;
+    height: 37.5rem;
+    border-radius: 1.875rem;
+    background: #F8F7F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product2{
+    margin-top:6.25rem;
+}
+
+.product3{
+    margin-top:2rem;
+}
+
+.product4{
+    margin-top:7rem;
+}
+
+.product-list h2{
+    color: #3B4F19;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin:30px 0 15px 0;
+}
+
+.product-words{
+    color: #000;
+    font-size: 1.25rem;
+    line-height:2.5rem;
+    letter-spacing: 0.125rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding:10px;
+}
+
+.sugar{
+    color: #FFF;
+    font-size: 1.25rem;
+    line-height:2rem;
+    letter-spacing: 0.1875rem;
+    display: inline-flex;
+    margin-top:45px;
+    padding: 0 2.5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background: #3B4F19;
+    justify-content: center;
+    align-items: center;
+}
+
+/*price*/
+
+.price{
+    margin:6rem auto 0 auto;
+    width: 62.5rem;
+    height: 25rem;
+    border-radius: 3.125rem;
+    background: #F8F7F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+
+.price h1{
+    margin: 0;
+    color: #3B4F19;
+    font-size: 4.0625rem;
+    letter-spacing: 0.5rem;
+}
+
+.price p{
+    color: #3B4F19;
+    text-align: center;
+    font-family:'bubble';
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height:4rem;
+    letter-spacing: 0.25rem;
+    margin:3rem 0 0 0;
+}
+
+.price img{
+    width: 30%;
+    position: absolute;
+    top:10%;
+    left:-10%;
+}
+
+/*footer*/
+
+footer{
+    height: 18.75rem;
+    border-radius: 5.625rem 5.625rem 0rem 0rem;
+    background: #F8F7F4;
+    margin:15rem 0 0 0;
+    display: flex;
+}
+
+iframe{
+    border-radius: 1.875rem;
+    margin-left:4.44rem;
+    align-self: flex-end;
+}
+
+.contact-info-section2{
+    margin-left:3rem;
+}
+
+.contact-info-section2 h1{
+    color: #3B4F19;
+    font-size: 2.8125rem;
+    line-height: normal;
+    letter-spacing: 0.28125rem;
+    margin-top:-1.7rem;
+}
+
+.info{
+    display:flex;
+    align-items: center;
+    margin-bottom:1.89rem;
+}
+
+.info a{
+    color: #3B4F19;
+    text-decoration: none;
+}
+
+.info-word{
+    color: #3B4F19;
+    font-family:'bubble';
+    font-size: 1.875rem;
+    letter-spacing: 0.1875rem;
+    margin:0 0 0 1.31rem;
+}
+
+.icon{
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+
+.footer-deco{
+    background-color: #3B4F19;
+    height: 1.68156rem;
+    margin: 0;
+    width: 100%;
+}
+
+.footer-deco img{
+    display: block;
+    object-fit:cover;
+    margin: 0;
+    padding: 0.9rem 0;
+}
+
+/*hamburger list*/
+
+.ham{
+    margin: 0%;
+    padding: 0%;
+}
+
+label{
+    display: block;
+    text-align: end;
+    cursor: pointer;
+}
+
+.ham-list{
+    background-color: #3B4F19;
+    list-style: none;
+    margin-top: -5%;
+    padding:0;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 500ms;
+    background-color:#3B4F19;
+    opacity: 0;
+    border-radius: 0.5rem;
+}
+
+.ham-list li{
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    margin: 0%;
+    font-size: 1.25rem;
+}
+
+.ham-list li a{
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 0.125rem;
+    display: block;
+    padding: 0.75rem;
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ .ham-list{
+    transform:none;
+    transition: 500ms;
+    opacity:1;
+}
+
+.ham-list li:hover{
+    background-color: #556c2e;
+}

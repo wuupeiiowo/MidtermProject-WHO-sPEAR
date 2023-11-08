@@ -1,0 +1,484 @@
+html{
+    font-family:'Prata', serif;
+    background-color: #F8F8F4;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'bubble';
+    src: url('../fonts-bubble/font/jf-openhuninn-2.0.woff') format("woff"),
+           url('../fonts-bubble/font/jf-openhuninn-2.0.ttf') format("truetype"),
+  }
+
+.bubble{
+    font-family:'bubble';
+    font-size: 1.5625rem;
+  }
+.container{
+    max-width:1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-size:4.375rem;
+    letter-spacing: 0.4375rem;
+    margin:0;
+    padding:0;
+    color: #3B4F19;
+}
+
+/*header*/
+
+header{
+width:100%;
+z-index:9;
+position: relative;
+}
+
+nav{
+    z-index:9999;
+    font-size: 1.25rem;
+    letter-spacing: 0.125rem;
+    position: absolute;
+    top:1.25rem;
+    display: grid;
+    width:100%;
+    justify-content: center;
+}
+
+.header-list{
+    display: inline-flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+    margin-top:0.125rem;
+}
+
+.header-list-item{
+    display: block;
+    padding:0.75rem;
+    letter-spacing:2px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left:3rem;
+
+}
+
+.header-list-item a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.capitalview{
+justify-content: center;
+width: 100%;
+position: relative;
+}
+
+.capitalviewpic{
+    display: block;
+    object-fit: cover;
+    object-position:center;
+    width: 80rem;
+    height: 46.625rem;
+}
+
+.logo{
+    width:180px;
+    height:180px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.capitalview-words{
+    position: absolute;
+    top:19.08rem;
+    left:11rem;
+    text-align: center;
+    color:#FFF;
+}
+
+.logoname{
+    font-size: 6.25rem;
+    margin:0;
+    letter-spacing: 0.625rem;
+    width:100%;
+}
+
+.slogan{
+    font-size: 2.5rem;
+    margin:0;
+    font-family: 'bubble';
+}
+
+/*.header-fixed{
+    display: flex;
+    max-width:1280px;
+    width:100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 101, 101);
+}*/
+
+.menu{
+    width:90px;
+    height:90px;
+}
+
+.header-list a:hover{
+    color: #3B4F19;
+    transition-duration:250ms;
+}
+
+/*aboutus*/
+
+.aboutus-leadin{
+text-align:left;
+margin-top:10.75rem;
+display: flex;
+padding-bottom:0;
+justify-content: space-between;
+height: 437px;
+}
+
+.aboutus-title{
+    text-align: center;
+}
+
+.aboutus-words{
+    margin:1.4rem 0 0 0;
+    letter-spacing: 0.15625rem;
+    line-height:2.75rem;
+}
+
+.aboutus-view{
+    color: #3B4F19;
+    font-size: 1.5625rem;
+    letter-spacing: 0.15625rem;
+    margin:0.94rem 0 0 23rem;
+    border-radius: 2.1875rem;
+    width: 12.5rem;
+    height: 4.375rem;
+    background-color: #D2CABB;
+}
+
+.mountain{
+    width:45%;
+    height:100%;
+    object-fit: cover;
+    object-position:center;
+    margin-left:1rem;
+}
+
+.aboutus-pic{
+    margin-top:6rem;
+    display:flex;
+}
+
+.aboutus-pic-mama{
+    width: 42.5rem;
+    height: 35.50769rem;
+    object-fit: cover;
+    margin-left:3.12rem;
+}
+
+.aboutus-pic-store{
+    width: 18.125rem;
+    height: 28.53006rem;
+    object-fit: cover;
+    margin-left:10rem;
+    margin-top:16rem;
+}
+
+.aboutus-section2 a{
+    color: #3B4F19;
+    text-decoration: none; 
+    display:inline-flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ourprocess*/
+
+.ourprocess-leadin{
+    margin-top:8.72rem;
+    border-top: 3px solid #4A3612;
+    border-bottom: 3px solid #4A3612;
+    background: #E1DCD3;
+    display: flex;
+    height: 34.375rem;
+    justify-content: space-between;
+    padding-top:3.75rem;
+    box-sizing:border-box;
+}
+
+.ourprocess-section1{
+    margin:0 0 0 3.75rem ;
+}
+
+.ourprocess-section2{
+    margin-right: 5.62rem;
+    margin-left:-3.12rem;
+    width:40.62rem;
+    height: 24.375rem;
+    justify-content: space-between;
+    display: inline-flex;
+}
+.ourprocess-pic{
+    width: 18.75rem;
+    height: 24.375rem;
+    border-radius: 3.125rem 3.125rem 0rem 0rem;
+    object-fit: cover;
+}
+
+.ourprocess-section1 a{
+    display:inline-block;
+    color: #313F1A;
+    font-size: 1.875rem;
+    letter-spacing: 0.1875rem;
+    margin:1rem 0 0 0;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.ourprocess-section1 a:hover{
+    color:white;
+    transition-duration: 300ms;
+}
+
+/*product*/
+
+.product-title{
+margin-top:9.37rem;
+text-align: center;
+}
+
+.product-title h1{
+    padding: 0;
+    margin: 0;
+}
+
+.product-title p{
+    color: #3B4F19;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.75rem;
+}
+
+.product-list{
+    margin-top:4.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content:space-around;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: calc(100%/4);
+    margin-top:1rem;
+    padding:0%;
+}
+
+.product-word{
+    margin:1.25rem 0;
+    color: #26350D;
+    font-size: 2.1875rem;
+    letter-spacing: 0.21875rem;
+}
+
+.product-wordsm{
+    width: 11.25rem;
+    height: 3.4375rem;
+    border-radius: 2.5rem;
+    background: #3B4F19;
+    margin:0;
+    color: #F8F8F4;
+    font-size: 1.5625rem;
+    letter-spacing: 0.15625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-top:0.81rem;
+}
+
+.product-pic{
+    width: 16.875rem;
+    height: 16.875rem;
+}
+
+.product-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1.88rem;
+    height: 5.625rem;
+    width:100%;
+}
+
+.product-view a{
+    display: block;
+    color: #3B4F19;
+    font-size: 2.1875rem;
+    letter-spacing: 0.21875rem;
+    width: 18.75rem;
+    height: 5.625rem;
+    border-radius: 3.125rem;
+    background: #D2CABB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*contact-info*/
+
+.contact-info{
+    margin-top:6.88rem;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
+    background: #e1ddd0;
+    color: #3B4F19;
+    height: 30.625rem;
+    display: flex;
+}
+
+iframe{
+    border-radius: 1.875rem;
+    margin:1.25rem 0 0 3.25rem;
+}
+
+.contact-info-section2 h1{
+    color: #3B4F19;
+    font-size: 2.8125rem;
+    letter-spacing: 0.28125rem;
+    margin:2.5rem 0;
+}
+
+.contact-info-section2{
+    margin-left:1.38rem;
+}
+
+.info{
+    display:flex;
+    align-items: center;
+    margin-bottom:2.6rem;
+    height: 3.125rem;
+}
+
+.info a{
+    color: #3B4F19;
+    text-decoration: none;
+}
+
+.icon{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.info-word{
+    color: #3B4F19;
+    text-align: center;
+    font-size: 1.875rem;
+    letter-spacing: 0.1875rem;
+    margin-left:2.2rem;
+}
+
+.contact-info-section2-word{
+    color: #3B4F19;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/*footer*/
+
+.footer-decoration{
+    height: 1.68156rem;
+    background-color: #3B4F19;
+    border-bottom: 0.125rem dashed #F8F8F4;
+}
+
+footer{
+    background: #3B4F19; 
+    margin: 0;
+    color: #FFF;
+    font-size: 1.2rem;
+    letter-spacing: 0.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-word{
+margin: 0;
+}
+
+/*hamburger list*/
+
+.ham{
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    right: 0%;
+    z-index: 999;
+}
+
+label{
+    display: block;
+    text-align: end;
+    cursor: pointer;
+}
+
+.ham-list{
+    background-color: #3B4F19;
+    list-style: none;
+    margin-top: -5%;
+    padding:0;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 500ms;
+    background-color:#3B4F19;
+    opacity: 0;
+    border-radius: 0.5rem;
+}
+
+.ham-list li{
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    margin: 0%;
+    font-size: 1.25rem;
+}
+
+.ham-list li a{
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 0.125rem;
+    display: block;
+    padding: 0.75rem;
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ .ham-list{
+    transform:none;
+    transition: 500ms;
+    opacity:1;
+}
+
+.ham-list li:hover{
+    background-color: #556c2e;
+}
