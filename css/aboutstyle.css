@@ -4,6 +4,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    margin: 0;
+}
+
 @font-face {
     font-family: 'bubble';
     src: url('../fonts-bubble/font/jf-openhuninn-2.0.woff') format("woff"),
